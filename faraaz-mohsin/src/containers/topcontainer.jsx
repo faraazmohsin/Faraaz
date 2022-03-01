@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavHeader } from '../components/nav';
+import { motion } from 'framer-motion/dist/framer-motion';
 import Slide from '../../node_modules/react-reveal';
-import { motion } from 'framer-motion//dist/framer-motion';
 import { AiFillMail } from 'react-icons/ai';
 import { IconContext } from 'react-icons/lib';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
+import { Element, scroller } from 'react-scroll';
 
-const MainContainer = styled.div`
 
+const TopMainContainer = styled.div`
+    display: flex;
+    position: relative;
+    height: 90vh;
+    width: 100%;
 `;
 
 const LeftNameTitle = styled.div`
@@ -25,8 +30,9 @@ const LeftSubTitle = styled.div`
     display: flex;
     position: absolute;
     font-family: 'Poppins', sans-serif;
-    margin: 13vh 0vw 0vh 4vw;
+    margin: 13.5vh 0vw 0vh 3.5vw;
     font-size: 0.96rem;
+    color: #5B2C6F;
 `;
 
 const BothText = styled.div`
@@ -57,7 +63,7 @@ const MainBottomContainer = styled.div`
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 50vh;
 `;
 
@@ -71,24 +77,27 @@ const SocialBanner = styled.div`
 const MailIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
+    color: #5B2C6F;
 `;
 
 const GithubIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
+    color: #5B2C6F;
 `;
 
 const LinkIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
+    color: #5B2C6F;
 `;
 
-const ExploreButton = styled(motion.div)`
+const StartButton = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-
+    width: 100%;
+    margin-top: 20vh;
 `;
 
 const Button = styled(motion.button)`
@@ -97,32 +106,38 @@ const Button = styled(motion.button)`
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    font-weight: bold;
+    background-color: #5B2C6F;
     cursor: pointer;
     font-size: 1.4rem;
     border-radius: 40px;
     padding: 0.5vh 3vw 0.5vh 3vw;
     font-family: 'Poppins', sans-serif;
-    margin: 50vh 0vw 0vh 0vw;
+    margin: 12vh 0vw 0vh 0vw;
 `;
 
-
 export function TopContainer() {
+
+    const scrollNext = () => {
+        scroller.scrollTo("aboutContainer", { smooth: true, duration: 1400});
+    }
+
     return (
         <div>
-            <NavHeader/>
-                <MainContainer>
-                    <LeftNameTitle>
-                        <Slide left>
-                            Faraaz
-                        </Slide>
-                    </LeftNameTitle>
-                    <LeftSubTitle>
-                        <Slide left>
-                            Full-Stack Engineer & Designer
-                        </Slide>
-                    </LeftSubTitle>
-                    <BothText>
+            <Element name="topContainer">
+            <NavHeader />
+            <TopMainContainer>
+                <LeftNameTitle>
+                    <Slide left>
+                        Faraaz
+                    </Slide>
+                </LeftNameTitle>
+                <LeftSubTitle>
+                    <Slide left>
+                        Full-Stack Engineer & Designer
+                    </Slide>
+                </LeftSubTitle>
+                <BothText>
                     <NowText>
                         <Slide left>
                         Now exploring &darr;
@@ -134,8 +149,8 @@ export function TopContainer() {
                     transition={{duration:3}}
                     >Blockchain Development</NewText>
                     </BothText>
-                </MainContainer>
-                <MainBottomContainer>
+
+                    <MainBottomContainer>
                     <SocialBanner>
                             <MailIcon whileHover={{scale: 1.1}}
                                                 initial={{opacity: 0}}
@@ -163,13 +178,17 @@ export function TopContainer() {
                             </LinkIcon>
                     </SocialBanner>
                 </MainBottomContainer>
-                <ExploreButton>
-                        <Button  whileHover={{scale: 1.1}}
+
+                
+                <StartButton>
+                        <Button onClick={scrollNext}  whileHover={{scale: 1.1}}
                                                 initial={{opacity: 0}}
                                                 animate={{opacity: 1}}>
                             Start
                         </Button>
-                </ExploreButton>
+                </StartButton>
+            </TopMainContainer>
+            </Element>
         </div>
     )
 };

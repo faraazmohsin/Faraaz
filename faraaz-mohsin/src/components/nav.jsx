@@ -1,33 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion/dist/framer-motion';
 import Typist from 'react-typist';
 
 const Nav = styled.div`
     display: flex;
+    flex-direction: column;
     height: 19vh;
-    margin: 3vh 0vw 0vw 3vw;
+    margin: 3vh 0vw 0vh 3vw;
 `;
 
-const NavSub = styled.div`
+const NavSub = styled(motion.div)`
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
     margin: 0vh 0vw 0.2vh 0vw;
+    cursor: pointer;
 `;
 
 export function NavHeader() {
     return (
-        <div>
-                <Nav>
-                    <Typist>
-                        <Typist.Delay ms={300}/>
-                        <NavSub>home</NavSub>
-                        <NavSub>about</NavSub>
-                        <NavSub>experience</NavSub>
-                        <NavSub>software-projects</NavSub>
-                    </Typist>
-                </Nav>
-        </div>
+        <Nav>
+            <Typist>
+                <NavSub
+                >home</NavSub>
+                <NavSub
+                >about</NavSub>
+                <NavSub
+                >experience</NavSub>
+                <NavSub
+                >software-projects</NavSub>
+            </Typist>
+        </Nav>
     )
-};
+}
