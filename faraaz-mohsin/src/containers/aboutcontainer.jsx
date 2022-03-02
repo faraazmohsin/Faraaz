@@ -66,6 +66,10 @@ export function AboutContainer() {
                     </br>
                     <br>
                     </br>
+                    <br>
+                    </br>
+                    <br>
+                    </br>
                     The technologies I have been using:
                 </AboutText>
 
