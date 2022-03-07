@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import FadeIn from 'react-fade-in';
 
 const FooterMainContainer = styled.div`
     display: flex;
@@ -29,12 +30,16 @@ export function Footer() {
     return(
         <div>
             <FooterMainContainer>
+            <FadeIn>
             <FooterOne>
                 Built and designed by Faraaz Mohsin.
             </FooterOne>
+            </FadeIn>
+            <FadeIn>
             <FooterTwo>
                 All rights reserved. ©
             </FooterTwo>
+            </FadeIn>
             </FooterMainContainer>
         </div>
     )

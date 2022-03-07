@@ -169,7 +169,7 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <a href=''>
+                                <a href='mailto:webmaster@example.com'>
                                     <AiFillMail/>
                                 </a>
                             </IconContext.Provider>
@@ -179,7 +179,7 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <a href=''>
+                                <a href='https://github.com/faraazmohsin'>
                                     <AiFillGithub />
                                 </a>
                             </IconContext.Provider>
@@ -189,7 +189,7 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <a href=''>
+                                <a href='https://www.linkedin.com/in/faraazmohsin/'>
                                     <AiFillLinkedin />
                                 </a>
                             </IconContext.Provider>
