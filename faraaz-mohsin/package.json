@@ -1,7 +1,7 @@
 {
   "name": "faraaz-mohsin",
   "version": "0.1.0",
-  "homepage": "faraazmohsin.ca",
+  "homepage": "https://faraazmohsin.ca",
   "private": true,
   "dependencies": {
     "@steveeeie/react-page-transition": "^1.2.1",
