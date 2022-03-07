@@ -54,7 +54,7 @@ export function AboutContainer() {
                 <Slide left>
                 <AboutText>
                     I am currently studying Software Engineering at University of 
-                    Ontario Institute of Technology, with a focus in Artificial Intelligence and Softare Architecture.
+                    Ontario Institute of Technology, with a focus in Artificial Intelligence and Software Architecture.
                     <br>
                     </br>
                     <br>
