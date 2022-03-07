@@ -10,7 +10,7 @@ const AboutMainContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 115vh;
+    margin-bottom: 30vh;
 `;
 
 const AboutTitle = styled(Element)`

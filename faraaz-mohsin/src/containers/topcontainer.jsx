@@ -78,18 +78,30 @@ const MailIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
     color: #5B2C6F;
+
+    a {
+        color: inherit;
+    }
 `;
 
 const GithubIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
     color: #5B2C6F;
+
+    a {
+        color: inherit;
+    }
 `;
 
 const LinkIcon = styled(motion.div)`
     cursor: pointer;
     margin: 0vh 0vw 0vh 0.5vw;
     color: #5B2C6F;
+
+    a {
+        color: inherit;
+    }
 `;
 
 const StartButton = styled(motion.div)`
@@ -157,7 +169,9 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <AiFillMail/>
+                                <a href=''>
+                                    <AiFillMail/>
+                                </a>
                             </IconContext.Provider>
                             </MailIcon>
                             <GithubIcon whileHover={{scale: 1.1}}
@@ -165,7 +179,9 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <AiFillGithub />
+                                <a href=''>
+                                    <AiFillGithub />
+                                </a>
                             </IconContext.Provider>
                             </GithubIcon>
                             <LinkIcon whileHover={{scale: 1.1}}
@@ -173,7 +189,9 @@ export function TopContainer() {
                                                 animate={{opacity: 1}}
                             >
                             <IconContext.Provider value={{size: "2.2em"}}>
-                                <AiFillLinkedin />
+                                <a href=''>
+                                    <AiFillLinkedin />
+                                </a>
                             </IconContext.Provider>
                             </LinkIcon>
                     </SocialBanner>
