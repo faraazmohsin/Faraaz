@@ -160,7 +160,7 @@ const ProjLinksThree = styled.div`
 
 export function ProjectsContainer() {
     return (
-        <ProjectsMainContainer>
+        <ProjectsMainContainer name="projectsContainer">
             <FadeIn>
                 <ProjTitle>
                     software-projects

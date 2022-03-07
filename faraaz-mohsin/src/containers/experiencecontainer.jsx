@@ -96,7 +96,7 @@ const ScrollUp = styled(motion.div)`
 export function ExperienceContainer() {
 
     return (
-        <ExperienceMainContainer>
+        <ExperienceMainContainer name="experienceContainer">
             <FadeIn>
                 <ExTitle>
                     experience

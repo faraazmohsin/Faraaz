@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion/dist/framer-motion';
 import Typist from 'react-typist';
+import { Element, scroller } from 'react-scroll';
 
 const Nav = styled.div`
     display: flex;
@@ -20,16 +21,33 @@ const NavSub = styled(motion.div)`
 `;
 
 export function NavHeader() {
+
+    const scrollHome = () => {
+        scroller.scrollTo("homeContainer", { smooth: true, duration: 1400});
+    }
+
+    const scrollAbout = () => {
+        scroller.scrollTo("aboutContainer", { smooth: true, duration: 1400});
+    }
+
+    const scrollEx = () => {
+        scroller.scrollTo("experienceContainer", { smooth: true, duration: 1400});
+    }
+
+    const scrollProj = () => {
+        scroller.scrollTo("projectsContainer", { smooth: true, duration: 1400});
+    }
+
     return (
         <Nav>
             <Typist>
-                <NavSub
+                <NavSub onClick={scrollHome}
                 >home</NavSub>
-                <NavSub
+                <NavSub onClick={scrollAbout}
                 >about</NavSub>
-                <NavSub
+                <NavSub onClick={scrollEx}
                 >experience</NavSub>
-                <NavSub
+                <NavSub onClick={scrollProj}
                 >software-projects</NavSub>
             </Typist>
         </Nav>
