@@ -4,6 +4,7 @@ import { motion } from 'framer-motion/dist/framer-motion';
 import FadeIn from 'react-fade-in';
 import { IconContext } from 'react-icons/lib';
 import { FiGithub } from 'react-icons/fi';
+import { FiExternalLink } from 'react-icons/fi';
 
 const ProjectsMainContainer = styled.div`
     display: flex;
@@ -150,8 +151,17 @@ const ProjLinks = styled.div`
 
 const ProjLinksThree = styled.div`
     display: flex;
-    margin: 28% 0 0 58%;
+    margin: 28% 0 0 40%;
     cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
+const ProjLinksThreeEx = styled.div`
+    display: flex;
+    padding: 0 0 0 25%;
 
     a {
         color: inherit;
@@ -231,10 +241,10 @@ export function ProjectsContainer() {
                     >
                         <ProInfoContainer>
                             <ProjMiniTitle>
-                              Weatherlert
+                              SneakPeek
                             </ProjMiniTitle>
                             <ProjMiniSub>
-                               An application created to get accurate weather forecasts with a clean and colorful UI.
+                               A sneaker release calendar application that keeps you updated with the latest drops.
                             </ProjMiniSub>
 
                             <BottomProjInfoContainerTwo>
@@ -244,10 +254,18 @@ export function ProjectsContainer() {
 
                                 <ProjLinksThree>
                                     <IconContext.Provider value={{size: "2.2em"}}>
-                                        <a href=''>
+                                        <a href='https://github.com/faraazmohsin/SneakPeek'>
                                         <FiGithub/>
                                         </a>
                                     </IconContext.Provider>
+
+                                    <ProjLinksThreeEx>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://faraazmohsin.github.io/SneakPeek/'>
+                                        <FiExternalLink/>
+                                        </a>
+                                    </IconContext.Provider>
+                                    </ProjLinksThreeEx>
                                 </ProjLinksThree>
                             </BottomProjInfoContainerTwo>
                         </ProInfoContainer>
