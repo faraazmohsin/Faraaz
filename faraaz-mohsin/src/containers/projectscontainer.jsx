@@ -12,6 +12,10 @@ const ProjectsMainContainer = styled.div`
     width: 100%;
     background-color: #EAF2F8;
     padding: 0 0 20% 0;
+    
+    @media (min-width: 1600px) {
+            padding: 0 0 44% 0;
+    }
 `;
 
 const ProjTitle = styled.div`
