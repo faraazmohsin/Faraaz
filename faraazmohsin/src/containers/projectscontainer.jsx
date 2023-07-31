@@ -284,6 +284,24 @@ const ProjLinksFive = styled.div`
     }
 `;
 
+const ProjLangSix = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 56% 0 0 0;
+    width: 15em;
+`;
+
+const ProjLinksSix= styled.div`
+    display: flex;
+    margin: 54.5% -5% 0 0;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
 const ProjLinksFiveEx = styled.div`
     display: flex;
     padding: 0 0 0 20%;
@@ -479,24 +497,24 @@ export function ProjectsContainer() {
                     >
                     <ProInfoContainer>
                             <ProjMiniTitle>
-                                Road Surface Detection Using Machine Learning
+                                Auto Lock
                             </ProjMiniTitle>
                             <ProjMiniSub>
-                               A full-stack distributed application to capture and classify road damages in realtime.
+                               IoT based digital locking system designed to automate and digitize the action of locking a door.
                             </ProjMiniSub>
 
                             <BottomProjInfoContainer>
-                                <ProjLang>
-                                    Python | Kafka | Neo4j
-                                </ProjLang>
+                                <ProjLangSix>
+                                    C++
+                                </ProjLangSix>
 
-                                <ProjLinks>
+                                <ProjLinksSix>
                                     <IconContext.Provider value={{size: "2.2em"}}>
-                                        <a href='https://github.com/Capstone-RSD'>
+                                        <a href='https://github.com/faraazmohsin/AutoLockIoTDoorLockProject'>
                                         <FiGithub/>
                                         </a>
                                     </IconContext.Provider>
-                                </ProjLinks>
+                                </ProjLinksSix>
                             </BottomProjInfoContainer>
                         </ProInfoContainer>
                     </RowTwoProjThree>
