@@ -47,6 +47,17 @@ const ProjRowOne = styled.div`
     }
 `;
 
+const ProjRowTwo = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+`;
+
 const RowOneProjOne = styled(motion.div)`
     display: flex;
     background-color: #AF7AC5;
@@ -103,6 +114,63 @@ const RowOneProjThree = styled(motion.div)`
     }
 `;
 
+const RowTwoProjOne = styled(motion.div)`
+    display: flex;
+    background-color: #AF7AC5;
+    width: 20em;
+    height: 20em;
+    border-radius: 4% 4% 4% 4%;
+    margin: 2em 2em 0 2em;
+
+    @media (max-width: 450px) {
+            width: 21em;
+            margin: 0 0 5vh 0;
+
+    }
+
+    &:hover {
+        background-color: #633974;
+    }
+`;
+
+const RowTwoProjTwo = styled(motion.div)`
+    display: flex;
+    background-color: #AF7AC5;
+    width: 20em;
+    height: 20em;
+    border-radius: 4% 4% 4% 4%;
+    margin: 2em 2em 0 0;
+
+    @media (max-width: 450px) {
+            width: 21em;
+            margin: 0 0 5vh 0;
+
+    }
+
+    &:hover {
+        background-color: #633974;
+    }
+`;
+
+const RowTwoProjThree = styled(motion.div)`
+    display: flex;
+    background-color: #AF7AC5;
+    width: 20em;
+    height: 20em;
+    border-radius: 4% 4% 4% 4%;
+    margin: 2em 2em 0 0;
+
+    @media (max-width: 450px) {
+            width: 21em;
+            margin: 0 0 5vh 0;
+
+    }
+
+    &:hover {
+        background-color: #633974;
+    }
+`;
+
 const ProInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -138,11 +206,25 @@ const BottomProjInfoContainerTwo =styled.div`
     margin: 0 0 0 0;
 `;
 
+const BottomProjInfoContainerThree =styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 0;
+`;
+
 const ProjLang = styled.div`
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     margin: 30% 0 0 0;
+    width: 15em;
+`;
+
+const ProjLangThree = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 33% 0 0 0;
     width: 15em;
 `;
 
@@ -156,10 +238,55 @@ const ProjLinks = styled.div`
     }
 `;
 
+const ProjLinksFour = styled.div`
+    display: flex;
+    margin: 52% -10% 0 0;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
+const ProjLangFour = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 53% 0 0 0;
+    width: 15em;
+`;
+
 const ProjLinksThree = styled.div`
     display: flex;
-    margin: 28% 0 0 40%;
+    margin: 30.5% -5% 0 0;
     cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
+const ProjLangFive = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 66% 0 0 0;
+    width: 15em;
+`;
+
+const ProjLinksFive = styled.div`
+    display: flex;
+    margin: 64% -5% 0 0;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
+const ProjLinksFiveEx = styled.div`
+    display: flex;
+    padding: 0 0 0 20%;
 
     a {
         color: inherit;
@@ -168,7 +295,7 @@ const ProjLinksThree = styled.div`
 
 const ProjLinksThreeEx = styled.div`
     display: flex;
-    padding: 0 0 0 25%;
+    padding: 0 0 0 20%;
 
     a {
         color: inherit;
@@ -234,7 +361,7 @@ export function ProjectsContainer() {
 
                                 <ProjLinks>
                                     <IconContext.Provider value={{size: "2.2em"}}>
-                                        <a href='https://github.com/faraazmohsin/GuessTheLetter'>
+                                        <a href='https://github.com/faraazmohsin/BlockchainVotingPlatform'>
                                         <FiGithub/>
                                         </a>
                                     </IconContext.Provider>
@@ -249,36 +376,131 @@ export function ProjectsContainer() {
                     >
                         <ProInfoContainer>
                             <ProjMiniTitle>
-                              SneakPeek
+                              Wander
                             </ProjMiniTitle>
                             <ProjMiniSub>
-                               A sneaker release calendar application that keeps you updated with the latest drops.
+                                Wander is an app that promotes exploration and exercise by providing AI-generated guided running tours.
                             </ProjMiniSub>
 
-                            <BottomProjInfoContainerTwo>
-                                <ProjLang>
-                                    JavaScript
-                                </ProjLang>
+                            <BottomProjInfoContainerThree>
+                                <ProjLangThree>
+                                    Python | JavaScript
+                                </ProjLangThree>
 
                                 <ProjLinksThree>
                                     <IconContext.Provider value={{size: "2.2em"}}>
-                                        <a href='https://github.com/faraazmohsin/SneakPeek'>
+                                        <a href='https://github.com/Discovery-Squad/uofthacks-project'>
                                         <FiGithub/>
                                         </a>
                                     </IconContext.Provider>
 
                                     <ProjLinksThreeEx>
                                     <IconContext.Provider value={{size: "2.2em"}}>
-                                        <a href='https://faraazmohsin.github.io/SneakPeek/'>
+                                        <a href='https://devpost.com/software/placeholder-name-n7wisp'>
                                         <FiExternalLink/>
                                         </a>
                                     </IconContext.Provider>
                                     </ProjLinksThreeEx>
                                 </ProjLinksThree>
-                            </BottomProjInfoContainerTwo>
+                            </BottomProjInfoContainerThree>
                         </ProInfoContainer>
                     </RowOneProjThree>
                 </ProjRowOne>
+
+                <ProjRowTwo>
+                <RowTwoProjOne
+                    whileHover={{scale: 1.1}}
+                    transition={{duration:0.6}}
+                    >
+                        <ProInfoContainer>
+                            <ProjMiniTitle>
+                                Image Retrieval Barcode Generator
+                            </ProjMiniTitle>
+                            <ProjMiniSub>
+                                Algorithms created for the retrieval of images from a set of generated barcodes.
+                            </ProjMiniSub>
+
+                            <BottomProjInfoContainer>
+                                <ProjLangFour>
+                                    Python
+                                </ProjLangFour>
+
+                                <ProjLinksFour>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://github.com/faraazmohsin/ImageRetrievalBarcodeGenerator'>
+                                        <FiGithub/>
+                                        </a>
+                                    </IconContext.Provider>
+                                </ProjLinksFour>
+                            </BottomProjInfoContainer>
+                        </ProInfoContainer>
+                    </RowTwoProjOne>
+
+                    <RowTwoProjTwo
+                    whileHover={{scale: 1.1}}
+                    transition={{duration:0.6}}
+                    >
+                    <ProInfoContainer>
+                            <ProjMiniTitle>
+                                SneakPeek
+                            </ProjMiniTitle>
+                            <ProjMiniSub>
+                            A sneaker release calendar application that keeps you updated with the latest drops.
+                            </ProjMiniSub>
+
+                            <BottomProjInfoContainer>
+                                <ProjLangFive>
+                                    JavaScript
+                                </ProjLangFive>
+
+                                <ProjLinksFive>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://github.com/Capstone-RSD'>
+                                        <FiGithub/>
+                                        </a>
+                                    </IconContext.Provider>
+
+                                    <ProjLinksFiveEx>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://faraazmohsin.github.io/SneakPeek/'>
+                                        <FiExternalLink/>
+                                        </a>
+                                    </IconContext.Provider>
+                                    </ProjLinksFiveEx>
+
+                                </ProjLinksFive>
+                            </BottomProjInfoContainer>
+                        </ProInfoContainer>
+                    </RowTwoProjTwo>
+
+                    <RowTwoProjThree
+                    whileHover={{scale: 1.1}}
+                    transition={{duration:0.6}}
+                    >
+                    <ProInfoContainer>
+                            <ProjMiniTitle>
+                                Road Surface Detection Using Machine Learning
+                            </ProjMiniTitle>
+                            <ProjMiniSub>
+                               A full-stack distributed application to capture and classify road damages in realtime.
+                            </ProjMiniSub>
+
+                            <BottomProjInfoContainer>
+                                <ProjLang>
+                                    Python | Kafka | Neo4j
+                                </ProjLang>
+
+                                <ProjLinks>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://github.com/Capstone-RSD'>
+                                        <FiGithub/>
+                                        </a>
+                                    </IconContext.Provider>
+                                </ProjLinks>
+                            </BottomProjInfoContainer>
+                        </ProInfoContainer>
+                    </RowTwoProjThree>
+                </ProjRowTwo>
             </ProjGridContainer>
         </ProjectsMainContainer>
     ) 
