@@ -5,6 +5,7 @@ import { IconContext } from 'react-icons/lib';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { motion } from "framer-motion";
+import FadeIn from 'react-fade-in';
 import { Element, scroller } from 'react-scroll';
 
 const TopMainContainer = styled.div`
@@ -182,12 +183,16 @@ export function TopContainer() {
         <div>
             <TopMainContainer>
                 <MainTitle>
-                    <NameTitle>
-                        Hi, my name is Faraaz.
-                    </NameTitle>
-                    <RankTitle>
-                        I'm a software engineer.
-                    </RankTitle>
+                    <FadeIn>
+                        <NameTitle>
+                            Hi, my name is Faraaz.
+                        </NameTitle>
+                    </FadeIn>
+                    <FadeIn>
+                        <RankTitle>
+                            I'm a software engineer.
+                        </RankTitle>
+                    </FadeIn>
                 </MainTitle>
             </TopMainContainer>
 

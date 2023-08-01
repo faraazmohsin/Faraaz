@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { IconContext } from 'react-icons/lib';
 import { FiGithub } from 'react-icons/fi';
 import { FiExternalLink } from 'react-icons/fi';
+import { FiFramer } from 'react-icons/fi';
 import { motion } from "framer-motion";
 import FadeIn from 'react-fade-in';
 
@@ -24,6 +25,22 @@ const ProjTitle = styled.div`
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 3rem;
+
+    @media (max-width: 450px) {
+        margin: 11vh 0vw 0vh 5vw;
+    }
+`;
+
+const ProjTitleTwo = styled.div`
+    display: flex;
+    margin: 30vh 0vw 0vh 5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+
+    @media (max-width: 450px) {
+        margin: 11vh 0vw 0vh 5vw;
+    }
 `;
 
 const ProjGridContainer = styled.div`
@@ -34,6 +51,10 @@ const ProjGridContainer = styled.div`
     align-items: center;
     width: 100%;
     margin: 15vh 0vw 0vh 0vw;
+
+    @media (max-width: 450px) {
+        margin: 5vh 0vw 0vh 0vw;
+    }
 `;
 
 const ProjRowOne = styled.div`
@@ -171,7 +192,34 @@ const RowTwoProjThree = styled(motion.div)`
     }
 `;
 
+const RowOneUIOne = styled(motion.div)`
+    display: flex;
+    background-color: #AF7AC5;
+    width: 21em;
+    height: 10.5em;
+    border-radius: 1rem;
+    margin: 0 2em 0 0;
+
+    @media (max-width: 450px) {
+            width: 21em;
+            margin: 0 0 5vh 0;
+
+    }
+
+    &:hover {
+        background-color: #633974;
+    }
+`;
+
 const ProInfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0 0 8%;
+    width: 15em;
+    height: 15em;
+`;
+
+const UIInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 8% 0 0 8%;
@@ -186,6 +234,13 @@ const ProjMiniTitle = styled.div`
     font-size: 1.3rem;
 `;
 
+const UIMiniTitle = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+`;
+
 const ProjMiniSub = styled.div`
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -193,7 +248,21 @@ const ProjMiniSub = styled.div`
     margin: 2vh 0vw 0vh 0vw;
 `;
 
+const UIMiniSub = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 2vh 0vw 0vh 0vw;
+`;
+
 const BottomProjInfoContainer =styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: -13% 0 0 0;
+    width: 15em;
+`;
+
+const BottomUIInfoContainer =styled.div`
     display: flex;
     flex-direction: row;
     margin: -13% 0 0 0;
@@ -231,6 +300,16 @@ const ProjLangThree = styled.div`
 const ProjLinks = styled.div`
     display: flex;
     margin: 28% -10% 0 0;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+`;
+
+const UILinks = styled.div`
+    display: flex;
+    margin: -5% 0 0 100%;
     cursor: pointer;
 
     a {
@@ -520,6 +599,45 @@ export function ProjectsContainer() {
                     </RowTwoProjThree>
                 </ProjRowTwo>
             </ProjGridContainer>
+
+            <FadeIn>
+                <ProjTitleTwo>
+                    ui/ux-projects
+                </ProjTitleTwo>
+            </FadeIn>
+
+            <ProjGridContainer>
+                <ProjRowOne>
+                    <RowOneUIOne
+                    whileHover={{scale: 1.1}}
+                    transition={{duration:0.6}}
+                    >
+                    <UIInfoContainer>
+                            <UIMiniTitle>
+                                6site
+                            </UIMiniTitle>
+                            <UIMiniSub>
+                               Mockup design of videography/photography business based in Toronto.
+                            </UIMiniSub>
+
+                            <BottomUIInfoContainer>
+                                {/* <ProjLangSix>
+                                    
+                                </ProjLangSix> */}
+
+                                <UILinks>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://framer.com/share/6site--9iQ6FhRpkfZDlIRorYZ8/Eqbay9mOn'>
+                                        <FiFramer/>
+                                        </a>
+                                    </IconContext.Provider>
+                                </UILinks>
+                            </BottomUIInfoContainer>
+                        </UIInfoContainer>
+                    </RowOneUIOne>
+                </ProjRowOne>
+            </ProjGridContainer>
+
         </ProjectsMainContainer>
     ) 
 };
