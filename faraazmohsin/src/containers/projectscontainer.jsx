@@ -67,7 +67,7 @@ const UIGridContainer = styled.div`
     margin: 15vh 0vw 10vh 0vw;
 
     @media (max-width: 450px) {
-        margin: 5vh 0vw 20vh 0vw;
+        margin: 5vh 0vw 15vh 0vw;
     }
 `;
 
@@ -83,6 +83,17 @@ const ProjRowOne = styled.div`
 `;
 
 const UIRowOne = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+`;
+
+const UIRowTwo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,8 +231,8 @@ const RowTwoProjThree = styled(motion.div)`
 const RowOneUIOne = styled(motion.div)`
     display: flex;
     background-color: #AF7AC5;
-    width: 23.5em;
-    height: 15em;
+    width: 20em;
+    height: 20em;
     border-radius: 1rem;
     margin: 0 2em 0 0;
 
@@ -239,8 +250,8 @@ const RowOneUIOne = styled(motion.div)`
 const RowOneUITwo = styled(motion.div)`
     display: flex;
     background-color: #AF7AC5;
-    width: 23.5em;
-    height: 15em;
+    width: 20em;
+    height: 20em;
     border-radius: 1rem;
     margin: 0 2em 0 0;
 
@@ -337,7 +348,7 @@ const UILang = styled.div`
     display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin: 30% 0 0 0;
+    margin: 65% 0 0 0;
     width: 15em;
 `;
 
@@ -361,7 +372,7 @@ const ProjLinks = styled.div`
 
 const UILinks = styled.div`
     display: flex;
-    margin: 27% 0 0 75%;
+    margin: 63% 0 0 53%;
     cursor: pointer;
 
     a {
@@ -369,14 +380,14 @@ const UILinks = styled.div`
     }
 
     @media (max-width: 450px) {
-            margin: 27% 0 0 60%;
+            margin: 63% 0 0 53%;
 
     }
 `;
 
 const UITwoLinks = styled.div`
     display: flex;
-    margin: 27% 0 0 94%;
+    margin: 63% 0 0 70%;
     cursor: pointer;
 
     a {
@@ -384,7 +395,7 @@ const UITwoLinks = styled.div`
     }
 
     @media (max-width: 450px) {
-            margin: 27% 0 0 80%;
+            margin: 63% 0 0 75%;
 
     }
 `;
@@ -396,6 +407,11 @@ const ProjLinksFour = styled.div`
 
     a {
         color: inherit;
+    }
+
+    @media (max-width: 450px) {
+            margin: 52% 0 0 74%;
+
     }
 `;
 
@@ -459,6 +475,11 @@ const ProjLinksSix= styled.div`
 
     a {
         color: inherit;
+    }
+
+    @media (max-width: 450px) {
+            margin: 54.5% 0 0 83%;
+
     }
 `;
 
@@ -755,6 +776,10 @@ export function ProjectsContainer() {
                         </UIInfoContainer>
                     </RowOneUITwo>
                 </UIRowOne>
+
+                <UIRowTwo>
+                    
+                </UIRowTwo>
             </UIGridContainer>
 
         </ProjectsMainContainer>

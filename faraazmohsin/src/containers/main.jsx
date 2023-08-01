@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { TopContainer } from './topcontainer';
 import { ProjectsContainer } from './projectscontainer';
+import { Footer } from './footercontainer';
 
 const HomeContainer = styled.div`
     display: flex;
@@ -16,6 +17,7 @@ export function Home() {
         <HomeContainer>
             <TopContainer/>
             <ProjectsContainer/>
+            <Footer/>
         </HomeContainer>
     )
 };
