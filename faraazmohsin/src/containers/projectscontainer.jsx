@@ -57,7 +57,32 @@ const ProjGridContainer = styled.div`
     }
 `;
 
+const UIGridContainer = styled.div`
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 15vh 0vw 10vh 0vw;
+
+    @media (max-width: 450px) {
+        margin: 5vh 0vw 20vh 0vw;
+    }
+`;
+
 const ProjRowOne = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 450px) {
+        flex-direction: column;
+    }
+`;
+
+const UIRowOne = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -195,8 +220,27 @@ const RowTwoProjThree = styled(motion.div)`
 const RowOneUIOne = styled(motion.div)`
     display: flex;
     background-color: #AF7AC5;
-    width: 21em;
-    height: 10.5em;
+    width: 23.5em;
+    height: 15em;
+    border-radius: 1rem;
+    margin: 0 2em 0 0;
+
+    @media (max-width: 450px) {
+            width: 21em;
+            margin: 0 0 5vh 0;
+
+    }
+
+    &:hover {
+        background-color: #633974;
+    }
+`;
+
+const RowOneUITwo = styled(motion.div)`
+    display: flex;
+    background-color: #AF7AC5;
+    width: 23.5em;
+    height: 15em;
     border-radius: 1rem;
     margin: 0 2em 0 0;
 
@@ -289,6 +333,14 @@ const ProjLang = styled.div`
     width: 15em;
 `;
 
+const UILang = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 30% 0 0 0;
+    width: 15em;
+`;
+
 const ProjLangThree = styled.div`
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -309,11 +361,31 @@ const ProjLinks = styled.div`
 
 const UILinks = styled.div`
     display: flex;
-    margin: -5% 0 0 100%;
+    margin: 27% 0 0 75%;
     cursor: pointer;
 
     a {
         color: inherit;
+    }
+
+    @media (max-width: 450px) {
+            margin: 27% 0 0 60%;
+
+    }
+`;
+
+const UITwoLinks = styled.div`
+    display: flex;
+    margin: 27% 0 0 94%;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+
+    @media (max-width: 450px) {
+            margin: 27% 0 0 80%;
+
     }
 `;
 
@@ -351,6 +423,15 @@ const ProjLangFive = styled.div`
     font-size: 1rem;
     margin: 66% 0 0 0;
     width: 15em;
+`;
+
+const UILinksOneEx = styled.div`
+    display: flex;
+    padding: 0 0 0 17%;
+
+    a {
+        color: inherit;
+    }
 `;
 
 const ProjLinksFive = styled.div`
@@ -606,8 +687,8 @@ export function ProjectsContainer() {
                 </ProjTitleTwo>
             </FadeIn>
 
-            <ProjGridContainer>
-                <ProjRowOne>
+            <UIGridContainer>
+                <UIRowOne>
                     <RowOneUIOne
                     whileHover={{scale: 1.1}}
                     transition={{duration:0.6}}
@@ -621,9 +702,9 @@ export function ProjectsContainer() {
                             </UIMiniSub>
 
                             <BottomUIInfoContainer>
-                                {/* <ProjLangSix>
-                                    
-                                </ProjLangSix> */}
+                                <UILang>
+                                    Framer
+                                </UILang>
 
                                 <UILinks>
                                     <IconContext.Provider value={{size: "2.2em"}}>
@@ -631,12 +712,50 @@ export function ProjectsContainer() {
                                         <FiFramer/>
                                         </a>
                                     </IconContext.Provider>
+
+                                    <UILinksOneEx>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://site-d730a.web.app/'>
+                                        <FiExternalLink/>
+                                        </a>
+                                    </IconContext.Provider>
+                                    </UILinksOneEx>
+
                                 </UILinks>
                             </BottomUIInfoContainer>
                         </UIInfoContainer>
                     </RowOneUIOne>
-                </ProjRowOne>
-            </ProjGridContainer>
+
+                    <RowOneUITwo
+                    whileHover={{scale: 1.1}}
+                    transition={{duration:0.6}}
+                    >
+                    <UIInfoContainer>
+                            <UIMiniTitle>
+                                SneakPeek
+                            </UIMiniTitle>
+                            <UIMiniSub>
+                               Initial mockup design of "SneakPeek", a sneaker realease calendar.
+                            </UIMiniSub>
+
+                            <BottomUIInfoContainer>
+                                <UILang>
+                                    Framer
+                                </UILang>
+
+                                <UITwoLinks>
+                                    <IconContext.Provider value={{size: "2.2em"}}>
+                                        <a href='https://framer.com/share/6site--9iQ6FhRpkfZDlIRorYZ8/Eqbay9mOn'>
+                                        <FiFramer/>
+                                        </a>
+                                    </IconContext.Provider>
+
+                                </UITwoLinks>
+                            </BottomUIInfoContainer>
+                        </UIInfoContainer>
+                    </RowOneUITwo>
+                </UIRowOne>
+            </UIGridContainer>
 
         </ProjectsMainContainer>
     ) 
