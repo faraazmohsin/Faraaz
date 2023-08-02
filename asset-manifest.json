@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Faraaz/static/css/main.e0c11d2f.css",
+    "main.js": "/Faraaz/static/js/main.62fd5b91.js",
+    "static/js/787.e445b308.chunk.js": "/Faraaz/static/js/787.e445b308.chunk.js",
+    "index.html": "/Faraaz/index.html",
+    "main.e0c11d2f.css.map": "/Faraaz/static/css/main.e0c11d2f.css.map",
+    "main.62fd5b91.js.map": "/Faraaz/static/js/main.62fd5b91.js.map",
+    "787.e445b308.chunk.js.map": "/Faraaz/static/js/787.e445b308.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0c11d2f.css",
+    "static/js/main.62fd5b91.js"
+  ]
+}
