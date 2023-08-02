@@ -39,7 +39,7 @@ const NameTitle = styled.div`
     margin-right: auto;
 
     @media (max-width: 450px) {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 `;
 
@@ -56,7 +56,7 @@ const RankTitle = styled.div`
     color: #5B2C6F;
 
     @media (max-width: 450px) {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 `;
 

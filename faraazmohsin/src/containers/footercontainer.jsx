@@ -10,11 +10,6 @@ const FooterMainContainer = styled.div`
     align-items: center;
     background-color: #E8DAEF;
     padding: 0 0 1% 0;
-
-    @media (max-width: 450px) {
-            padding: 0 0 60% 0;
-
-    }
 `;
 
 const FooterOne = styled.div`

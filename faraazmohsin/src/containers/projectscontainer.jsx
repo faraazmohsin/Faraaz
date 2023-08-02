@@ -27,7 +27,7 @@ const ProjTitle = styled.div`
     font-size: 3rem;
 
     @media (max-width: 450px) {
-        margin: 11vh 0vw 0vh 5vw;
+        margin: 20vh 0vw 0vh 5vw;
     }
 `;
 
@@ -352,6 +352,14 @@ const UILang = styled.div`
     width: 15em;
 `;
 
+const ProjLangTwo = styled.div`
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 43% 0 0 0;
+    width: 15em;
+`;
+
 const ProjLangThree = styled.div`
     display: flex;
     font-family: 'Poppins', sans-serif;
@@ -367,6 +375,21 @@ const ProjLinks = styled.div`
 
     a {
         color: inherit;
+    }
+`;
+
+const ProjLinksTwo = styled.div`
+    display: flex;
+    margin: 40% -10% 0 0;
+    cursor: pointer;
+
+    a {
+        color: inherit;
+    }
+
+    @media (max-width: 450px) {
+            
+
     }
 `;
 
@@ -547,24 +570,24 @@ export function ProjectsContainer() {
                     >
                         <ProInfoContainer>
                             <ProjMiniTitle>
-                              BlockVote: Blockchain Voting Platform
+                              BlockVote
                             </ProjMiniTitle>
                             <ProjMiniSub>
                                A decentralized web platform that utilizes the blockchain network to secure voter information and votes.
                             </ProjMiniSub>
 
                             <BottomProjInfoContainerTwo>
-                                <ProjLang>
+                                <ProjLangTwo>
                                     JavaScript | Solidity
-                                </ProjLang>
+                                </ProjLangTwo>
 
-                                <ProjLinks>
+                                <ProjLinksTwo>
                                     <IconContext.Provider value={{size: "2.2em"}}>
                                         <a href='https://github.com/faraazmohsin/BlockchainVotingPlatform'>
                                         <FiGithub/>
                                         </a>
                                     </IconContext.Provider>
-                                </ProjLinks>
+                                </ProjLinksTwo>
                             </BottomProjInfoContainerTwo>
                         </ProInfoContainer>
                     </RowOneProjTwo>
