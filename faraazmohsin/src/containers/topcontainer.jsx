@@ -22,7 +22,7 @@ const TopMainContainer = styled.div`
 const MainTitle = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 17vh;
     margin-left: auto;
     margin-right: auto;
 `;
@@ -39,7 +39,7 @@ const NameTitle = styled.div`
     margin-right: auto;
 
     @media (max-width: 450px) {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
     }
 `;
 
@@ -56,7 +56,7 @@ const RankTitle = styled.div`
     color: #5B2C6F;
 
     @media (max-width: 450px) {
-        font-size: 1.5rem;
+        font-size: 1.55rem;
     }
 `;
 

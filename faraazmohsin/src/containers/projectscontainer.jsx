@@ -27,7 +27,7 @@ const ProjTitle = styled.div`
     font-size: 3rem;
 
     @media (max-width: 450px) {
-        margin: 20vh 0vw 0vh 5vw;
+        margin: 25vh 0vw 0vh 5vw;
     }
 `;
 
