@@ -6,7 +6,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { motion } from "framer-motion";
 import FadeIn from 'react-fade-in';
-import { Element, scroller } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 const TopMainContainer = styled.div`
     display: flex;
@@ -242,11 +242,13 @@ export function TopContainer() {
                     </ProjectsButtonContainer>
 
                 <ResumeButtonContainer>
+                    <a style={{ textDecoration: 'none'}} href='https://drive.google.com/file/d/1MpyoaqZbj8thRoHV68JpuPmT6_5shYVQ/view?usp=sharing/'>
                     <ResumeButton
-                    onClick={scrollNext}  whileHover={{scale: 1.1}}
+                    whileHover={{scale: 1.1}}
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
-                    >Resume</ResumeButton>
+                    >
+                        Resume</ResumeButton></a>
                 </ResumeButtonContainer>
 
                 </ButtonsContainer>
