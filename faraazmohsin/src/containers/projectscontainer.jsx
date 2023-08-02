@@ -17,6 +17,10 @@ const ProjectsMainContainer = styled.div`
     @media (min-width: 1600px) {
             padding: 0 0 20vh 0;
     }
+
+    @media (max-width: 450px) {
+            padding: 0 0 10vh 0;
+    }
 `;
 
 const ProjTitle = styled.div`
