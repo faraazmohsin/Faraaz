@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { TopContainer } from './topcontainer';
 import { ProjectsContainer } from './projectscontainer';
 import { Footer } from './footercontainer';
+import ScrollToTop from "react-scroll-to-top";
 
 const HomeContainer = styled.div`
     display: flex;
@@ -18,6 +19,7 @@ export function Home() {
             <TopContainer/>
             <ProjectsContainer/>
             <Footer/>
+            <ScrollToTop color='#AF7AC5' smooth />
         </HomeContainer>
     )
 };
