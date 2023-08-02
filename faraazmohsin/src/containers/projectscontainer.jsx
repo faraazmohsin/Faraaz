@@ -12,7 +12,7 @@ const ProjectsMainContainer = styled.div`
     flex-direction: column;
     width: 100%;
     background-color: #E8DAEF;
-    padding: 0 0 16vh 0;
+    padding: 0 0 10px 0;
     
     @media (min-width: 1600px) {
             padding: 0 0 44% 0;
