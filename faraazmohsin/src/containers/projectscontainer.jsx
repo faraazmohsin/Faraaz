@@ -12,7 +12,7 @@ const ProjectsMainContainer = styled.div`
     flex-direction: column;
     width: 100%;
     background-color: #E8DAEF;
-    padding: 0 0 10px 0;
+    padding: 0 0 20vh 0;
     
     @media (min-width: 1600px) {
             padding: 0 0 44% 0;
@@ -24,7 +24,7 @@ const ProjTitle = styled.div`
     margin: 15vh 0vw 0vh 5vw;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
 
     @media (max-width: 450px) {
         margin: 25vh 0vw 0vh 5vw;
@@ -64,7 +64,7 @@ const UIGridContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 15vh 0vw 10vh 0vw;
+    margin: 15vh 0vw 0vh 0vw;
 
     @media (max-width: 450px) {
         margin: 5vh 0vw 15vh 0vw;
