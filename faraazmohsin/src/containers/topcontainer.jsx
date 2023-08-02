@@ -71,6 +71,10 @@ const BottomContainer = styled.div`
 
 const IconsContainer = styled.div`
     display: flex;
+
+    @media (max-width: 450px) {
+        margin-top: 2vh;
+    }
 `;
 
 const ButtonsContainer = styled.div`
@@ -78,7 +82,7 @@ const ButtonsContainer = styled.div`
     margin-top: 9vh;
 
     @media (max-width: 450px) {
-        margin-top: 10vh;
+        margin-top: 17vh;
     }
 `;
 
