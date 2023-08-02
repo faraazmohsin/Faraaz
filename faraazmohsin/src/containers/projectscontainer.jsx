@@ -19,7 +19,7 @@ const ProjectsMainContainer = styled.div`
     }
 
     @media (max-width: 450px) {
-            padding: 0 0 10vh 0;
+            padding: 0 0 8vh 0;
     }
 `;
 
