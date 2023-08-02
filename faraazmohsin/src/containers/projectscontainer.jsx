@@ -15,7 +15,7 @@ const ProjectsMainContainer = styled.div`
     padding: 0 0 20vh 0;
     
     @media (min-width: 1600px) {
-            padding: 0 0 44% 0;
+            padding: 0 0 20vh 0;
     }
 `;
 
