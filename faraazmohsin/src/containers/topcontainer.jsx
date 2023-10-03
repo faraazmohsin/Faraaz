@@ -246,7 +246,7 @@ export function TopContainer() {
                     </ProjectsButtonContainer>
 
                 <ResumeButtonContainer>
-                    <a style={{ textDecoration: 'none'}} href='https://drive.google.com/file/d/1MpyoaqZbj8thRoHV68JpuPmT6_5shYVQ/view?usp=sharing/'>
+                    <a style={{ textDecoration: 'none'}} href='https://drive.google.com/file/d/1aiLGunbjNrhLy_pkEI_g_YeVi1rYs4Ii/view?usp=sharing'>
                     <ResumeButton
                     whileHover={{scale: 1.1}}
                     initial={{opacity: 0}}
